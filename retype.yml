@@ -1,0 +1,12 @@
+input: .
+output: .retype
+url: wiki.ivhost.pl
+branding:
+  title: IVhost
+links:
+- text: Panel
+  link: https://panel.ivhost.pl
+- text: Discord
+  link: https://discord.gg/cz9CgCRMUe
+footer:
+  copyright: "&copy; IVhost {{ year }}. Wszelkie prawa zastrzeżone."
