@@ -1,10 +1,10 @@
 ---
-label: Uruchomienie bota Discord.py na serwerze VPS
+label: Hostowanie bota w discord.py
 icon: repo
 order: 1
 ---
 
-# Uruchomienie bota Discord.py na serwerze VPS
+# Jak hostować bota w discord.py na VPS
 
 ## Instalacja wymaganych modułów
 

@@ -4,6 +4,8 @@ url: wiki.ivhost.pl
 branding:
   title: IVhost
 links:
+- text: Strona główna
+  link: https://ivhost.pl
 - text: Panel
   link: https://panel.ivhost.pl
 - text: Discord
