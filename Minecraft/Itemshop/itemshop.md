@@ -1,7 +1,7 @@
 ---
 label: Jak zrobić itemshop
 icon: repo
-order: 1
+order: 100
 ---
 # Jak zrobić itemshop Minecraft
 IVhost posiada integrację z darmowym, rozbudowanym itemshopem Minecraft [VIshop.pl](https://vishop.pl). W tym poradniku

@@ -1,6 +1,7 @@
 ---
 label: Jak podpiąć domenę
 icon: repo
+order: 99
 ---
 ## Darmowa subdomena
 IVhost oferuje darmową subdomenę ivhs.pl (np. serwer.ivhs.pl). W celu ustawienia subdomeny należy udać się do ustawień
