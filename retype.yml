@@ -12,3 +12,9 @@ links:
   link: https://discord.gg/cz9CgCRMUe
 footer:
   copyright: "&copy; IVhost {{ year }}. Wszelkie prawa zastrzeżone."
+editor:
+  enabled: false
+meta:
+  title: " - IVhost"
+search:
+  placeholder: Szukaj
