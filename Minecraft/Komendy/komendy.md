@@ -13,7 +13,7 @@ W tej sekcji znajdziesz podstawowe komendy pomocne w zarządzaniu serwerem Minec
  `/ban [nick]`          | Banuje gracza.
  `/ban-ip [nick]`       | Banuje gracza na adres IP.
  `/pardon [nick]`       | Odbanowuje gracza.
- `/pardon [nick]`       | Odbanowuje IP gracza.
+ `/pardon-ip [nick]`       | Odbanowuje IP gracza.
  `/kick [nick]`       | Wyrzuca gracza z serwera.
  `/difficulty [peaceful|easy|normal|hard]` | Zmienia poziom trudności z poziomu serwera.
  `/gamemode [creative|survival|adventure|spectator]` | Zmienia tryb gry gracza.
