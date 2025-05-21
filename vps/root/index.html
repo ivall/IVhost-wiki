@@ -9,24 +9,26 @@
     <meta name="generator" content="Retype 3.8.1">
 
     <!-- Primary Meta Tags -->
-    <title>Jak hostować boty Discord na IVhost - IVhost</title>
-    <meta name="title" content="Jak hostować boty Discord na IVhost - IVhost">
-    <meta name="description" content="Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.">
+    <title>Jak odblokować roota na Ubuntu - IVhost</title>
+    <meta name="title" content="Jak odblokować roota na Ubuntu - IVhost">
+    <meta name="description" content="W celu odblokowania możliwości połączenia się przez SSH na konto root (używając hasła) wpisujemy polecenie ">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://wiki.ivhost.pl/boty-discord/hosting/">
+    <link rel="canonical" href="https://wiki.ivhost.pl/vps/root/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wiki.ivhost.pl/boty-discord/hosting/">
-    <meta property="og:title" content="Jak hostować boty Discord na IVhost - IVhost">
-    <meta property="og:description" content="Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.">
+    <meta property="og:url" content="https://wiki.ivhost.pl/vps/root/">
+    <meta property="og:title" content="Jak odblokować roota na Ubuntu - IVhost">
+    <meta property="og:description" content="W celu odblokowania możliwości połączenia się przez SSH na konto root (używając hasła) wpisujemy polecenie ">
+    <meta property="og:image" content="https://wiki.ivhost.pl/vps/root/img.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://wiki.ivhost.pl/boty-discord/hosting/">
-    <meta property="twitter:title" content="Jak hostować boty Discord na IVhost - IVhost">
-    <meta property="twitter:description" content="Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.">
+    <meta property="twitter:url" content="https://wiki.ivhost.pl/vps/root/">
+    <meta property="twitter:title" content="Jak odblokować roota na Ubuntu - IVhost">
+    <meta property="twitter:description" content="W celu odblokowania możliwości połączenia się przez SSH na konto root (używając hasła) wpisujemy polecenie ">
+    <meta property="twitter:image" content="https://wiki.ivhost.pl/vps/root/img.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -174,23 +176,24 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="jak-hostować-boty-discord-na-ivhost" class="break-words">
+<doc-anchor-target id="jak-odblokować-roota-na-ubuntu" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#jak-hostować-boty-discord-na-ivhost">#</doc-anchor-trigger>
-        <span>Jak hostować boty Discord na IVhost</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#jak-odblokować-roota-na-ubuntu">#</doc-anchor-trigger>
+        <span>Jak odblokować roota na Ubuntu</span>
     </h1>
 </doc-anchor-target>
-<p>Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.
-Plik uruchamiający boota musi znajdować się w głównej ścieżce i posiadać nazwę <code v-pre>bot.py</code> lub <code v-pre>bot.js</code>.
-Po wgraniu plików przechodzimy do zakładki ustawienia i klikamy przycisk zmienne (na dole). Wypisujemy teraz paczki do zainstalowania
-oddzielając je spacją.
+<p>W celu odblokowania możliwości połączenia się przez SSH na konto root (używając hasła) wpisujemy polecenie <code v-pre>sudo nano /etc/ssh/sshd_config</code>,
+następnie szukamy linijki <code v-pre>#PermitRootLogin prohibit-password</code>i usuwamy z niej znak #, a prohibit-password zmieniamy na yes.
+Finalnie ta linijka powinna wyglądać w następujący sposób:
 <figure class="content-center">
-    <img src="img.png" alt="Przykładowe biblioteki używane przez bota do zainstalowania">
-    <figcaption class="caption">Przykładowe biblioteki używane przez bota do zainstalowania</figcaption>
+    <img src="img.png" alt="Odblokowany SSH dla roota z hasłem na Ubuntu">
+    <figcaption class="caption">Odblokowany SSH dla roota z hasłem na Ubuntu</figcaption>
 </figure>
 </p>
-<p>Po uruchomieniu bota należy również wysłać wiadomość &quot;uruchomiono&quot; co oznaczy bota jako uruchomionego. W Pythonie będzie to
-<code v-pre>print(&quot;uruchomiono&quot;)</code>, natomiast w JavaScript <code v-pre>console.log(&quot;uruchomiono&quot;)</code>.</p>
+<p>Zapisujemy plik skrótek ctrl+s, a następnie wychodzimy z niego poprzez kombinację ctrl+x i wpisujemy polecenie <code v-pre>systemctl restart ssh</code>.</p>
+<p>Teraz musimy ustawić hasło roota, zrobimy to poleceniem <code v-pre>sudo passwd root</code>. Po wpisaniu polecenia wpisujemy hasło, podczas
+wpisywania hasła ze względów bezpieczeństwa nie widać. Po poprawnym wykonaniu wszystkich kroków powinieneś móc się zalogować
+na roota przez SSH używając ustawionego hasła.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -200,16 +203,23 @@ oddzielając je spacją.
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../vps/root/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../vps/discordpy/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Jak odblokować roota</span>
+                                                <span class="block mt-1">Hostowanie bota w discord.​py</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../boty-discord/hosting/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Jak hostować boty Discord</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -250,6 +260,6 @@ oddzielając je spacją.
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Jak hostować boty Discord", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Jak odblokować roota", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
