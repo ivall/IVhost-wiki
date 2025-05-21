@@ -10,7 +10,7 @@ następnie szukamy linijki `#PermitRootLogin prohibit-password`i usuwamy z niej 
 Finalnie ta linijka powinna wyglądać w następujący sposób:
 ![Odblokowany SSH dla roota z hasłem na Ubuntu](img.png)
 
-Zapisujemy plik skrótek ctrl+s, a następnie wychodzimy z niego poprzez kombinację ctrl+x i wpisujemy polecenie `systemctl restart ssh`.
+Zapisujemy plik skrótem ctrl+s, a następnie wychodzimy z niego poprzez kombinację ctrl+x i wpisujemy polecenie `systemctl restart ssh`.
 
 Teraz musimy ustawić hasło roota, zrobimy to poleceniem `sudo passwd root`. Po wpisaniu polecenia wpisujemy hasło, podczas
 wpisywania hasła ze względów bezpieczeństwa nie widać. Po poprawnym wykonaniu wszystkich kroków powinieneś móc się zalogować
