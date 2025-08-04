@@ -11,6 +11,3 @@ Plik uruchamiający boota musi znajdować się w głównej ścieżce i posiadać
 Po wgraniu plików przechodzimy do zakładki ustawienia i klikamy przycisk zmienne (na dole). Wypisujemy teraz paczki do zainstalowania
 oddzielając je spacją.
 ![Przykładowe biblioteki używane przez bota do zainstalowania](img.png)
-
-Po uruchomieniu bota należy również wysłać wiadomość "uruchomiono" co oznaczy bota jako uruchomionego. W Pythonie będzie to
-`print("uruchomiono")`, natomiast w JavaScript `console.log("uruchomiono")`.
