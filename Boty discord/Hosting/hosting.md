@@ -11,3 +11,6 @@ Plik uruchamiający boota musi znajdować się w głównej ścieżce i posiadać
 Po wgraniu plików przechodzimy do zakładki ustawienia i klikamy przycisk zmienne (na dole). Wypisujemy teraz paczki do zainstalowania
 oddzielając je spacją.
 ![Przykładowe biblioteki używane przez bota do zainstalowania](img.png)
+
+Jeżeli nie możesz zmienić nazwy pliku, który powinien być uruchamiany to skontaktuj się z obsługą - oferujemy zmianę nazwy
+uruchamianego pliku w poleceniu startowym, możemy też dać Ci dostęp do samodzielnej edycji polecenia startowego.
