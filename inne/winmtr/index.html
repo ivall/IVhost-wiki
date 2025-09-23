@@ -9,24 +9,26 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Jak hostować boty Discord na IVhost - IVhost</title>
-    <meta name="title" content="Jak hostować boty Discord na IVhost - IVhost">
-    <meta name="description" content="Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.">
+    <title>WinMTR - IVhost</title>
+    <meta name="title" content="WinMTR - IVhost">
+    <meta name="description" content="WinMTR to program łączący ze sobą funkcje traceroute i ping. Pokazuje on trasę sieciową pakietów wraz z pingiem na odcinkach">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://wiki.ivhost.pl/boty-discord/hosting/">
+    <link rel="canonical" href="https://wiki.ivhost.pl/inne/winmtr/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wiki.ivhost.pl/boty-discord/hosting/">
-    <meta property="og:title" content="Jak hostować boty Discord na IVhost - IVhost">
-    <meta property="og:description" content="Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.">
+    <meta property="og:url" content="https://wiki.ivhost.pl/inne/winmtr/">
+    <meta property="og:title" content="WinMTR - IVhost">
+    <meta property="og:description" content="WinMTR to program łączący ze sobą funkcje traceroute i ping. Pokazuje on trasę sieciową pakietów wraz z pingiem na odcinkach">
+    <meta property="og:image" content="https://wiki.ivhost.pl/inne/winmtr/img.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://wiki.ivhost.pl/boty-discord/hosting/">
-    <meta property="twitter:title" content="Jak hostować boty Discord na IVhost - IVhost">
-    <meta property="twitter:description" content="Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.">
+    <meta property="twitter:url" content="https://wiki.ivhost.pl/inne/winmtr/">
+    <meta property="twitter:title" content="WinMTR - IVhost">
+    <meta property="twitter:description" content="WinMTR to program łączący ze sobą funkcje traceroute i ping. Pokazuje on trasę sieciową pakietów wraz z pingiem na odcinkach">
+    <meta property="twitter:image" content="https://wiki.ivhost.pl/inne/winmtr/img.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -175,23 +177,31 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="jak-hostować-boty-discord-na-ivhost" class="break-words">
+<doc-anchor-target id="winmtr" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#jak-hostować-boty-discord-na-ivhost">#</doc-anchor-trigger>
-        <span>Jak hostować boty Discord na IVhost</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#winmtr">#</doc-anchor-trigger>
+        <span>WinMTR</span>
     </h1>
 </doc-anchor-target>
-<p>Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP.
-Plik uruchamiający boota musi znajdować się w głównej ścieżce i posiadać nazwę <code v-pre>bot.py</code> lub <code v-pre>bot.js</code>.
-Po wgraniu plików przechodzimy do zakładki ustawienia i klikamy przycisk zmienne (na dole). Wypisujemy teraz paczki do zainstalowania
-oddzielając je spacją.
+<p>WinMTR to program łączący ze sobą funkcje traceroute i ping. Pokazuje on trasę sieciową pakietów wraz z pingiem na odcinkach
+trasy sieciowej.</p>
+<doc-anchor-target id="jak-używać">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#jak-używać">#</doc-anchor-trigger>
+        <span>Jak używać?</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Pobierz program WinMTR z <a href="https://winmtr.net" rel="nofollow noopener">tej strony</a> klikając w link o nazwie WinMTR-vxxx.zip.</li>
+<li>Otwórz archiwum pliku, przejdź do folderu WinMTR, a następnie wybierz wersję x64 i uruchom plik WinMTR.exe</li>
+<li>W polu Host wpisz adres IP lub nazwę domeny i kliknij przycisk Start.
 <figure class="content-center">
-    <img src="img.png" alt="Przykładowe biblioteki używane przez bota do zainstalowania" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Przykładowe biblioteki używane przez bota do zainstalowania</figcaption>
+    <img src="img.png" alt="Program WinMTR" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Program WinMTR</figcaption>
 </figure>
-</p>
-<p>Jeżeli nie możesz zmienić nazwy pliku, który powinien być uruchamiany to skontaktuj się z obsługą - oferujemy zmianę nazwy
-uruchamianego pliku w poleceniu startowym, możemy też dać Ci dostęp do samodzielnej edycji polecenia startowego.</p>
+</li>
+</ol>
+<p>Po kliknięciu start odczekaj kilka minut i kliknij Stop. Kolumny Best/Avrg/Worst oznaczają ping w kolejności najlepszy, średni i najgorszy.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -201,23 +211,16 @@ uruchamianego pliku w poleceniu startowym, możemy też dać Ci dostęp do samod
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../vps/root/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../boty-discord/hosting/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Jak odblokować roota</span>
+                                                <span class="block mt-1">Jak hostować boty Discord</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../inne/winmtr/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Win​MTR</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -258,6 +261,6 @@ uruchamianego pliku w poleceniu startowym, możemy też dać Ci dostęp do samod
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Jak hostować boty Discord", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "WinMTR", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
