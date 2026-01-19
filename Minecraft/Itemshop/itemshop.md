@@ -5,8 +5,8 @@ order: 100
 ---
 # Jak zrobić itemshop Minecraft
 IVhost posiada integrację z darmowym, rozbudowanym itemshopem Minecraft [VIshop.pl](https://vishop.pl). W tym poradniku
-dowiesz się jak zrobić własny itemshop Minecraft z płatnościami IVhost. Wszystkie pieniądze z itemshopa będą trafiać
-na Twój wirtualny portfel IVhost.
+dowiesz się jak zrobić własny itemshop Minecraft z IVhost. Wszystkie zarobki z itemshopa będą trafiać na Twoje konto użytkownika
+w IVhost.
 
 ## Zakładanie itemshopu
 Przechodzimy na stronę VIshop.pl i logujemy się poprzez platformę Discord - jest to w pełni bezpieczne. Po zalogowaniu się
@@ -16,8 +16,8 @@ i wybieramy grę Minecraft oraz akceptujemy regulamin i klikamy stwórz.
 Po utworzeniu sklepu wybieramy go z listy sklepów i klikamy przejdź. 
 
 ### Dodawanie płatności IVhost
-Przechodzimy do zakładki operatorzy płatności, klikamy dodaj operatora płatności. W nazwie operatora wpisujemy np. "blik/psc/przelew/paypal" 
-albo po prostu IVhost. Z listy operatorów płatności w polu operator płatności wybieramy IVhost. Przechodzimy teraz do panelu 
+Przechodzimy do zakładki operatorzy płatności, klikamy dodaj operatora płatności. W nazwie wpisujemy np. "blik/psc/przelew/paypal" 
+albo po prostu IVhost. Z listy operatorów wybieramy hosting IVhost. Przechodzimy teraz do panelu 
 IVhost, do zakładki konto. W oknie z tajnym kluczem klikamy wygeneruj nowy klucz jeżeli nie jest jeszcze wygenerowany, 
 a następnie klikamy skopiuj klucz. Wracamy teraz do panelu VIshop i w polu sekret (po wybraniu operatora IVhost) wklejamy
 skopiowany klucz i klikamy dodaj.
