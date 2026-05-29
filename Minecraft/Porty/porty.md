@@ -4,8 +4,7 @@ icon: repo
 ---
 
 IVhost oferuje dodatkowe porty dla serwerów Minecraft. W celu dodania portów należy przejść do wybranego serwera, a następnie 
-zakładki ustawienia i kliknąć ikonę zębatki obok portów. W tym miejscu znajduje się lista portów wraz z możliwością ich
-dodawania usuwania, ustawiania jako główny.
+zakładki porty. W tym miejscu znajduje się lista portów wraz z możliwością ich dodawania usuwania, ustawiania jako główny.
 
 ![Menu portów na IVhost](img.png)
 

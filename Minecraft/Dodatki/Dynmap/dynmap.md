@@ -13,11 +13,10 @@ Pobrany plik jar wrzucamy do folderu plugins naszego serwera, po czym restartuje
 serwer, a nie jedynie użyć komendy reload.
 
 ## Konfiguracja DynMap
-Przechodzimy w panelu IVhost do swojego serwera, a następnie do zakładki ustawienia. Klikamy teraz obok portów na zębatkę,
-po przeniesieniu na podstronę z portami klikamy nowy port, jako rodzaj portu wybieramy DynMap. 
+Przechodzimy w panelu IVhost do swojego serwera, a następnie do zakładki porty. Klikamy nowy port, jako rodzaj portu wybieramy DynMap i dodajemy. 
 
 Przechodzimy teraz w plikach do plugins -> dynmap -> configuration.txt. Szukamy linijki webserver-port i zmieniamy domyślny 
-port (8123) na port, ktory wcześniej dodaliśmy w panelu IVhost w ustawieniach. Warto upewnić się również, że pole webserver-bindaddress 
+port (8123) na port, który wcześniej dodaliśmy w panelu IVhost w ustawieniach. Warto upewnić się również, że pole webserver-bindaddress 
 jest zakomentowane (# z przodu) lub ustawione na 0.0.0.0, w przeciwnym razie mapa nie będzie działała. 
 
 Zapisujemy teraz plik i restartujemy serwer, jeżeli wszystko zrobiliśmy poprawnie to powinniśmy znaleźć mapę serwera wchodząc
