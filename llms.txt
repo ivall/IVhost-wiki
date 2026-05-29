@@ -1,0 +1,31 @@
+﻿#  - IVhost
+
+> Znajdziesz tutaj pomoc związaną z hostingiem IVhost i jego usługami.
+
+- [IVhost wiki](https://wiki.ivhost.pl/index.md): IVhost wiki
+
+## Minecraft
+
+- [Podstawowa konfiguracja](https://wiki.ivhost.pl/minecraft/konfiguracja/konfiguracja.md): W tej sekcji dowiesz się jak zmienić podstawową konfigurację serwera, czyli np. zezwolić na wchodzenie graczy non premium, zmienić poziom trudności, zmiana ikony itd.
+- [Jak zrobić itemshop Minecraft](https://wiki.ivhost.pl/minecraft/itemshop/itemshop.md): IVhost posiada integrację z darmowym, rozbudowanym itemshopem Minecraft VIshop.pl. W tym poradniku dowiesz się jak zrobić własny itemshop Minecraft z IVhost.
+- [Podstawowe komendy](https://wiki.ivhost.pl/minecraft/komendy/komendy.md): W tej sekcji znajdziesz podstawowe komendy pomocne w zarządzaniu serwerem Minecraft.
+- [Jak podpiąć domenę](https://wiki.ivhost.pl/minecraft/domena/domena.md): W tym poradniku dowiesz się jak podpiąć domenę do serwera Minecraft. Wykorzystamy do tego typ rekordu SRV, dzięki czemu możemy bez problemu na domenie równocześnie z serwerem Minecraft mieć np.
+- [Jak używać SFTP](https://wiki.ivhost.pl/minecraft/sftp/sftp.md): Do połączenia się przez SFTP do serwera potrzebny jest odpowiedni program. W tym poradniku zostanie wykorzystany jeden z najpopularniejszych klientów FTP, czyli FileZilla.
+- [Dodatkowe porty](https://wiki.ivhost.pl/minecraft/porty/porty.md): IVhost oferuje dodatkowe porty dla serwerów Minecraft. W celu dodania portów należy przejść do wybranego serwera, a następnie zakładki porty. W tym miejscu znajduje się lista portów wraz z możliwością ich dodawania usuwania, ustawiania jako główny.
+
+### Dodatki
+
+- [Plugin DynMap](https://wiki.ivhost.pl/minecraft/dodatki/dynmap/dynmap.md): W tym poradniku dowiesz się jak skonfigurować plugin DynMap czyli najpopularniejszy plugin na mapę serwera wyświetlaną na stronie internetowej.
+
+## VPS
+
+- [Jak hostować bota w discord.py na VPS](https://wiki.ivhost.pl/vps/discordpy/discordpy.md): Aby zainstalować moduły potrzebne do uruchomienia bota, najpierw należy zainstalować pip.
+- [Jak odblokować roota na Ubuntu](https://wiki.ivhost.pl/vps/root/root.md): W celu odblokowania możliwości połączenia się przez SSH na konto root (używając hasła) wpisujemy polecenie sudo nano /etc/ssh/sshd_config, następnie szukamy linijki #PermitRootLogin prohibit-password i usuwamy z niej znak #, a prohibit-password zmieniamy na yes.
+
+## Boty Discord
+
+- [Jak hostować boty Discord na IVhost](https://wiki.ivhost.pl/boty-discord/hosting/hosting.md): Po zakupieniu odpowiedniego pakietu z kategorii botów Discord należy wgrać pliki bota poprzez zakładkę pliki lub SFTP. Plik uruchamiający boota musi znajdować się w głównej ścieżce i posiadać nazwę bot.py lub bot.js.
+
+## Inne
+
+- [WinMTR](https://wiki.ivhost.pl/inne/winmtr/winmtr.md): WinMTR to program łączący ze sobą funkcje traceroute i ping. Pokazuje on trasę sieciową pakietów wraz z pingiem na odcinkach trasy sieciowej.
